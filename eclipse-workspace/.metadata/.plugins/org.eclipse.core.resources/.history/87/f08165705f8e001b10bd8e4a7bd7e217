@@ -1,0 +1,21 @@
+
+public class Textplayer {
+  private String text;
+  private int anzahlWiederholungen;
+  
+  public void setText(String Text) {
+	text=Text;  
+}
+  public String getText() {
+	  return(text);
+}
+  public void abspielen() {
+	  
+}
+  public void setAnzahl(int Wiederholungen) {
+	  anzahlWiederholungen=Wiederholungen;
+}
+  public int getAnzahl() {
+	  return(anzahlWiederholungen);
+}
+}

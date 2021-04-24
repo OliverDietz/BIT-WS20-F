@@ -1,0 +1,21 @@
+public class Sortiment {
+    public static int produktAnzahl = 2;
+    public static int produktNummber = 1;
+    private static Produkt[] meineProdukte = new Produkt[produktAnzahl];
+
+    public static void anlegenProdukt(int a, String name, double preis) {
+        System.out.println("ProduktNr.: " + produktNummber + " wird angelegt...");
+        meineProdukte[a] = new Produkt();
+        meineProdukte[a].setProduktNummer(produktNummber++);
+        meineProdukte[a].setProduktName(name);
+        meineProdukte[a].setProduktPreis(preis);
+    }
+
+    public static void anzeigenProdukte() {
+        for (int i = 0; i < produktAnzahl; i++) {
+            if (meineProdukte[i] != null) {
+                System.out.println(meineProdukte[i].toString());
+            }
+        }
+    }
+}

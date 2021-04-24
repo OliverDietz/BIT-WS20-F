@@ -1,0 +1,12 @@
+
+public class MP3 {
+	private static String titel;
+	
+	public String get_titel(){
+		return titel;	
+	}
+	
+	public void set_titel(String InsertTitel){
+		titel=InsertTitel;	
+	}
+}

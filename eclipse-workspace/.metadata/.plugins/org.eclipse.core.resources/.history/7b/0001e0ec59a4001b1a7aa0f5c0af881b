@@ -1,0 +1,26 @@
+import java.util.ArrayList;
+
+public class Test {
+ static ArrayList<MP3> TitelList=new ArrayList<MP3> ();
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		MP3 Titel1;
+		Titel1=new MP3();
+		Titel1.set_titel("In the End");
+		TitelList.add(Titel1);
+		
+		MP3 Titel2;
+		Titel2=new MP3();
+		Titel2.set_titel("Castle of glass");
+		TitelList.add(Titel2);
+		
+		String testReturnTitle=Titel1.get_titel();
+		for(MP3 currentTitle:TitelList) {
+			System.out.println(currentTitle.get_titel());
+		}
+		for(MP3 currentTitle:TitelList) {
+		System.out.println(currentTitle +""+currentTitle.get_titel());
+		}
+	}
+
+}

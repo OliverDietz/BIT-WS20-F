@@ -1,0 +1,38 @@
+public class Produkt {
+    private int produktNummer;
+    private String produktName;
+    private double produktPreis;
+
+    public int getProduktNummer() {
+        return produktNummer;
+    }
+
+    public void setProduktNummer(int produktNummer) {
+        this.produktNummer = produktNummer;
+    }
+
+    public double getProduktPreis() {
+        return produktPreis;
+    }
+
+    public void setProduktPreis(double produktPreis) {
+        this.produktPreis = produktPreis;
+    }
+
+    public String getProduktName() {
+        return produktName;
+    }
+
+    public void setProduktName(String produktName) {
+        this.produktName = produktName;
+    }
+
+    @Override
+    public String toString() {
+        return "Produkt{" +
+                "produktNummer=" + produktNummer +
+                ", produktName='" + produktName + '\'' +
+                ", produktPreis=" + produktPreis +
+                '}';
+    }
+}

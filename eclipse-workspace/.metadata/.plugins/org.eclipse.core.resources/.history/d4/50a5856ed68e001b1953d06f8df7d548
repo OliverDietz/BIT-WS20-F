@@ -1,0 +1,11 @@
+import java.util.Scanner;
+public class StaticTastatur {
+private static Scanner eingabe=new Scanner (System.in);
+
+public static String eingabeString() {
+	return eingabe.nextLine();
+}
+public static int eingabeInt() {
+	return eingabe.nextInt();
+}
+}
